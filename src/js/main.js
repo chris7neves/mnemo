@@ -21,11 +21,21 @@ const scheduelSpace = document.getElementById("schedule-space")
 // In the more developed version, I should check local storage and session storage for saved projects and items
 
 function populateContainer(container, itemList) {
+   /**
+    * Populates a container with a list of items.
+    *  
+    * */ 
 
 }
 
-function addContainer(label, itemList) {
+function createContainer(label) {
     let container = document.createElement()
 }
 
-// I will need to create a function that builds the card, as it is relatively complex with many sub-elements.
+function addContainer(container) {
+    /**
+     * Adds a container to the interface.
+     * 
+     * @param {string} type - Either todo or habit.
+     */
+}

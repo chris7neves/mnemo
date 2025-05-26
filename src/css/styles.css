@@ -93,6 +93,16 @@ nav li:first-child {
     padding: 0px;
 }
 
+.todo-space {
+    display: flex;
+    flex-direction: column;
+}
+
+.habit-space {
+    display: flex;
+    flex-direction: column;
+}
+
 .container-card-label {
     position: absolute;
     top: -12px;
