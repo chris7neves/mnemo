@@ -5,17 +5,30 @@
 // Actually this isnt a good idea for separation of concerns. frontend logic should be disconnected from backend.
 
 
-class ItemContainer {
+export class ItemContainer {
 
     label;
-    items;
+    uuid;
+    #items = new Map();
 
-    constructor(label, itemSet=[]) {
+    constructor(label="Todo: Default Project") {
         this.label = label;
-        this.items = itemSet;
+        this.uuid = crypto.randomUUID();
     }
 
     addItem(item) {
-        this.items[this.items.length] = item;
+        this.#items.set(item.uid, item)
+    }
+
+    addManyItems(items) {
+        /**
+         * Accepts a container with a for .. each iterator
+         */
+    }
+
+    getItem(uuid) {
+        return this.#items.get(uuid)
     }
 }
+
+

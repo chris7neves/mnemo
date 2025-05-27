@@ -6,6 +6,7 @@
     <script src="./js/main.js" type="module"></script>
     <link rel="stylesheet" type="text/css" href="./css/modern-normalized.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/item.css">
     <!-- Add a css reset -->
     <title>Mnemo</title>
 </head>
@@ -16,7 +17,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Account</a></li>
             <li><a href="#">Login</a></li>
-            <li><button>&#xFF0B New Project</button></li>
+            <li><button id="new-project-btn">&#xFF0B New Project</button></li>
         </ul>
     </nav>
 
@@ -24,15 +25,13 @@
     <div class="wrapper">
         <div class="main-container">
             <div id="container-space">
-                <div class="todo-space">
-                    <ul class="container-card">
-                        <span class="container-card-label">Todo: Default Project</span>
-                        <li class="item">todo</li>
-                    </ul>
-                </div>
-                <div class="habit-space">
 
+                <div id="todo-space">
                 </div>
+
+                <div id="habit-space">
+                </div>
+
             </div>
             <div id="schedule-space">
             </div>
